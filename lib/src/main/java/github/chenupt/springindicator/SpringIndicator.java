@@ -134,7 +134,8 @@ public class SpringIndicator extends FrameLayout {
         for (int i = 0; i < viewPager.getAdapter().getCount(); i++) {
             TextView textView = new TextView(getContext());
             if(viewPager.getAdapter().getPageTitle(i) != null){
-                textView.setText(viewPager.getAdapter().getPageTitle(i));
+                int pos=i+1;
+                textView.setText(pos+");
             }
             textView.setGravity(Gravity.CENTER);
             textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize);
